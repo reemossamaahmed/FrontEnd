@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#e3e0f3;
+}
+.parent{
+    width: 40%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+div.child{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+}
+.div-odd{
+    background-color: #ffcc67;
+    left: 10%;
+    position: relative;
+}
+.div-even{
+    background-color: #3b3b3b;
+    right: 10%;
+    position: relative;
+}
+.div-1{
+    top: 10px;
+}
+.div-3{
+    top: 230px;
+    animation-delay: 10s;
+}
+.div-5{
+    top: 450px;
+    animation-delay: 20s;
+}
+.div-7{
+    top: 670px;
+    animation-delay: 30s;
+}
+
+.div-2{
+    top: 120px;
+    animation-delay: 5s;
+}
+.div-4{
+    top: 340px;
+    animation-delay: 15s;
+}
+.div-6{
+    top: 560px;
+    animation-delay: 25s;
+}
+.div-8{
+    top: 780px;
+    animation-delay: 35s;
+}
+
+.div-odd{
+    animation-name: move-odd;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards ;
+}
+
+@keyframes move-odd{
+    0%{
+        left: 10%;
+    }
+    25%{
+        left: 30%;
+    }
+    50%{
+        left: 50%;
+    }
+    75%{
+        left: 70%;
+    }
+    100%{
+        left: 79%;
+    }
+}
+
+.div-even{
+    animation-name: move-even;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards ;
+}
+@keyframes move-even{
+    0%{
+        right: 10%;
+        background-color: #8685ef;
+    }
+    25%{
+        right: 30%;
+        background-color: #8685ef;
+    }
+    50%{
+        right: 50%;
+        background-color: #8685ef;
+    }
+    75%{
+        right: 70%;
+        background-color: #8685ef;
+    }
+    100%{
+        right: 79%;
+        background-color: #8685ef;
+    }
+}
